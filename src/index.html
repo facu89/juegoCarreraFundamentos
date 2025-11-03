@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Carrera lógica</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Carrera lógica</h1>
+    <div id="game">
+      <div id="car"></div>
+      <div class="obstacle" id="ob1"></div>
+      <div class="obstacle" id="ob2"></div>
+      <div class="obstacle" id="ob3"></div>
+    </div>
+    <div id="controls">
+      <button onclick="moveCar('CARRIL1')" class="lane-button">Carril 1</button>
+      <button onclick="moveCar('CARRIL2')" class="lane-button">Carril 2</button>
+      <button onclick="moveCar('CARRIL3')" class="lane-button">Carril 3</button>
+    </div>
+    <script src="Tramo.js"></script>
+    <script src="logica.js"></script>
+  </body>
+</html>
