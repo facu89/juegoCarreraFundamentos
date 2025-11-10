@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Carrera lógica</h1>
+    <h1>Carrera Lógica - Autómata Finito</h1>
+    <div id="level-display">Nivel: 1</div>
     <div id="game">
       <div id="car"></div>
       <div class="obstacle" id="ob1"></div>
@@ -18,6 +19,36 @@
       <button onclick="moveCar('CARRIL2')" class="lane-button">Carril 2</button>
       <button onclick="moveCar('CARRIL3')" class="lane-button">Carril 3</button>
     </div>
+
+    <div id="game-over-screen" class="screen-overlay" style="display: none">
+      <div class="screen-content">
+        <h2>¡GAME OVER!</h2>
+        <p id="game-over-level">Nivel: 1</p>
+        <p>¿Qué quieres hacer?</p>
+        <div class="screen-buttons">
+          <button id="restart-btn" class="screen-button restart-button">
+            Reiniciar Nivel
+          </button>
+          <button id="quit-btn" class="screen-button quit-button">
+            Finalizar Juego
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="win-screen" class="screen-overlay" style="display: none">
+      <div class="screen-content">
+        <h2>¡FELICIDADES!</h2>
+        <p>¡Has completado todos los niveles!</p>
+        <p>Gracias por jugar la Carrera Lógica - Autómata Finito</p>
+        <div class="screen-buttons">
+          <button id="win-quit-btn" class="screen-button quit-button">
+            Finalizar
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script src="Tramo.js"></script>
     <script src="logica.js"></script>
   </body>
